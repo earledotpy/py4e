@@ -1,5 +1,6 @@
+
 try:
-    inp = input("Enter score:")
+    inp = input("Enter score: ")
     score = float(inp)
     if score < 0.0 or score > 1.0:
         print("Bad Score")
@@ -13,6 +14,5 @@ try:
         print("D")
     else:
         print("F")
-except: ValueError
-    print("Bad score")
-    
+except ValueError:
+        print("Bad score")
